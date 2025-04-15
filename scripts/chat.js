@@ -3,7 +3,7 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 import { 
   getDatabase, ref as dbRef, onValue, push, update, get 
 } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
-import { CheckAndEnforce } from "./moderation.js";
+import { CheckAndEnforce } from './scripts/moderation.js';
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA6-7STiFMEsdZleFSwSmopvdVj1z_ymx4",
