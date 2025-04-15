@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
 import { getDatabase, ref, query, orderByChild, equalTo, onValue, remove } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
-import { CheckAndEnforce } from "./moderation.js";
+import { CheckAndEnforce } from './scripts/moderation.js';
 // Your Firebase configuration – update with your project details
 const firebaseConfig = {
   apiKey: "AIzaSyA6-7STiFMEsdZleFSwSmopvdVj1z_ymx4",
