@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Item Image Generator</title>
+    <link rel="stylesheet" href="styles/generate.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate Your Item Image</h1>
+      <textarea id="description" placeholder="Describe your item..."></textarea>
+      <button id="generate-button">Generate Image</button>
+    </div>
+    
+    <!-- Modal for displaying the generated image -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <h2>Generated Image</h2>
+        <p>If you are on IPAD, just hold down on the image to download it!</p>
+        <img id="result-image" alt="Generated" />
+      </div>
+    </div>
+    
+    <script src="scripts/generate.js"></script>
+  </body>
+</html>

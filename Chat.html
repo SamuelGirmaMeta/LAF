@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat - Lost &amp; Found</title>
+    <link rel="stylesheet" href="styles/chat.css">
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Lost &amp; Found Chat</div>
+      <ul class="nav-links">
+        <li><a href="View.html">Home</a></li>
+        <li><a href="post.html">Post</a></li>
+        <li><a href="MyPosts.html">My Posts</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="Chat.html">Chat</a></li>
+      </ul>
+    </nav>
+    <div class="chat-container">
+      <aside class="chat-sidebar" id="chat-sidebar">
+        <h2>Conversations</h2>
+        <ul id="conversation-list">
+          <!-- Conversation list items will be inserted here -->
+        </ul>
+      </aside>
+      <section class="chat-main">
+        <header class="chat-header" id="chat-header">
+          <h2 id="chat-with">Select a conversation</h2>
+        </header>
+        <div class="chat-messages" id="chat-messages">
+          <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="chat-input">
+          <input type="text" id="message-input" placeholder="Type a message...">
+          <button id="send-button">Send</button>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="scripts/chat.js"></script>
+    
+  </body>
+</html>

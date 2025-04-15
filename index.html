@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NASM</title>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+    <!-- SweetAlert2 (minimalistic pop-ups) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles/auth.css">
+  </head>
+  <body>
+    <h1>NASM</h1>
+    <div class="container">
+      <div class="toggle-buttons">
+        <button id="show-login" class="active">Login</button>
+        <button id="show-signup">Sign Up</button>
+      </div>
+      <div class="form-container">
+        <div id="login-section" class="form-section active">
+          <h2>Login</h2>
+          <input type="email" id="login-email" placeholder="Email">
+          <input type="password" id="login-password" placeholder="Password">
+          <button id="login-button">Login</button>
+          <a href="#" id="reset-link">Forgot Password?</a>
+        </div>
+        <div id="signup-section" class="form-section">
+          <h2>Sign Up</h2>
+          <input type="text" id="signup-username" placeholder="Username">
+          <input type="email" id="signup-email" placeholder="Email">
+          <input type="password" id="signup-password" placeholder="Password">
+          <button id="signup-button">Sign Up</button>
+        </div>
+      </div>
+      <hr>
+      <div id="verification-section" style="display:none;">
+        <h2>Email Verification</h2>
+        <button id="send-verification-button">Resend Verification Email</button>
+      </div>
+      <div id="user-info" style="display:none;">
+        <h3>User Info</h3>
+        <p id="user-status"></p>
+        <button id="logout-button">Logout</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+  </body>
+</html>

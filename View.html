@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lost and Found - Gallery</title>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/view.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Lost &amp; Found</div>
+      <ul class="nav-links">
+        <li><a href="View.html">Home</a></li>
+        <li><a href="post.html">Post</a></li>
+        <li><a href="MyPosts.html">My Posts</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="Chat.html">Chat</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="posts-grid" id="posts-container">
+        <p class="loading">Loading posts...</p>
+      </div>
+    </main>
+    <!-- Popup for detailed view -->
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup-content" id="popup-content">
+        <div class="popup-header">
+          <h2 id="popup-title"></h2>
+          <span class="popup-close" id="popup-close">✖</span>
+        </div>
+        <div class="popup-images-container" id="popup-images-container"></div>
+        <div class="popup-info">
+          <div id="popup-description"></div>
+          <p id="popup-category"></p>
+          <small id="popup-timestamp"></small>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="scripts/view.js"></script>
+  </body>
+</html>

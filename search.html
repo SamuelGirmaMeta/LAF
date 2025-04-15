@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lost &amp; Found - Search</title>
+    <!-- Firebase App (if needed) -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+    <!-- Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/search.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Lost &amp; Found</div>
+      <ul class="nav-links">
+        <li><a href="View.html">Home</a></li>
+        <li><a href="post.html">Post</a></li>
+        <li><a href="MyPosts.html">My Posts</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="Chat.html">Chat</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <div class="search-icon" id="search-icon">
+        <!-- Magnifying glass SVG icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <circle cx="10" cy="10" r="7" stroke="black" stroke-width="2" fill="none"/>
+          <line x1="15" y1="15" x2="22" y2="22" stroke="black" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="search-panel" id="search-panel">
+        <input type="text" id="keyword" placeholder="Enter keywords">
+        <select id="category">
+          <option value="">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Documents">Documents</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Others">Others</option>
+        </select>
+        <div class="date-range">
+          <label for="start-date">From:</label>
+          <input type="date" id="start-date">
+          <label for="end-date">To:</label>
+          <input type="date" id="end-date">
+        </div>
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+    <div id="results-container">
+      <!-- Search results will be displayed here -->
+    </div>
+    <script type="module" src="scripts/search.js"></script>
+  </body>
+</html>
