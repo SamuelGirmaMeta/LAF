@@ -10,7 +10,7 @@ import {
   updateProfile,
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
-import { CheckAndEnforce } from "./moderation.js";
+import { CheckAndEnforce } from './scripts/moderation.js';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA6-7STiFMEsdZleFSwSmopvdVj1z_ymx4",
