@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebas
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
 import { getDatabase, ref as dbRef, push } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
 import { getStorage, ref as storageRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js";
-import { moderateContent, banUser, CheckAndEnforce } from "./moderation.js";
+import { moderateContent, banUser, CheckAndEnforce } from './scripts/moderation.js';
 // Your Firebase configuration – update with your project details
 const firebaseConfig = {
   apiKey: "AIzaSyA6-7STiFMEsdZleFSwSmopvdVj1z_ymx4",
