@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Updated color scheme: a deeper gradient background */
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 400px;
+  max-width: 90%;
+  animation: scaleIn 0.5s ease-out;
+  overflow: hidden;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Toggle button container and style */
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Active (highlighted) toggle button style */
+.toggle-buttons button.active {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+/* Form container: use min-height so both forms display completely */
+.form-container {
+  position: relative;
+  min-height: 320px; /* increased to fit both login and sign-up content */
+}
+
+/* Form sections animations */
+.form-section {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.form-section.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a#reset-link {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a#reset-link:hover {
+  color: #0056b3;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+#verification-section, #user-info {
+  text-align: center;
+}

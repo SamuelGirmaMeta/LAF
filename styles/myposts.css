@@ -1,0 +1,162 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base body styling */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Main Container */
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  /* Posts container */
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Loading text */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #777;
+  }
+  
+  /* Post item styling */
+  .post-item {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .post-item:last-child {
+    border-bottom: none;
+  }
+  
+  .post-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .post-category {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .post-timestamp {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  /* Delete button styling */
+  .delete-btn {
+    align-self: flex-start;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #e04343;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    .post-title {
+      font-size: 18px;
+    }
+    .post-description {
+      font-size: 14px;
+    }
+    .delete-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  .navbar {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #007bff;
+  }
